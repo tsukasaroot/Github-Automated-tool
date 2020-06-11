@@ -29,3 +29,10 @@ ssh_repo_switch:
 Switch all repo to ssh method of push to not get anymore errors about the git method.
 Takes 2 arguments
 $1 = working directory, $2 = repo owner
+
+ch_own_grp_change.sh
+Allow to change all files owner and group for the given directory
+
+Takes 2 arguments
+$1 = path to the folder to operate with
+$2 = user and group name

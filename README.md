@@ -9,7 +9,7 @@ https://stackoverflow.com/questions/19576742/how-to-clone-all-repos-at-once-from
 
 
 The script takes up to four arguments.
-$1 = repo owner, $2 = page, $3 = orgs | users
+$1 = orgs | users, $2 = repo owner, $3 = page
 (this script can clone up to 100 repo on one page, if theres more, need to launch the script again with second page as argument)
 
 push_all.sh:

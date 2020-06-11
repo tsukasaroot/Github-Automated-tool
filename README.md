@@ -4,8 +4,12 @@ Set of some tools to automate github deployment
 clone_all.sh:
 Just a dumb find looking through all given user repo to clone all of them (useful for a first clone on a new backup disk).
 
-The script takes up to four arguments. 
-$1 = repo owner, $2 = page, $3 = orgs | users, $4 = personal token
+updated to be able cloning private repos too, found solution here:
+https://stackoverflow.com/questions/19576742/how-to-clone-all-repos-at-once-from-github/32803025#32803025
+
+
+The script takes up to four arguments.
+$1 = repo owner, $2 = page, $3 = orgs | users
 (this script can clone up to 100 repo on one page, if theres more, need to launch the script again with second page as argument)
 
 push_all.sh:

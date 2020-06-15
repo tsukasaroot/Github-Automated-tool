@@ -10,9 +10,9 @@ echo "# $2" >> README.md
 git init
 git pull origin master --allow-unrelated-histories
 git add README.md
+cp $4 .
 git commit -m "First commit"
 git remote add origin git@github.com:$3/$2.git
-cp $4 .
 git push -u origin master
 git add *
 git commit -m "First website push"

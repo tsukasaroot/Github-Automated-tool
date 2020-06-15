@@ -8,10 +8,14 @@ echo 'initializing repo...\n'
 
 echo "# $2" >> README.md
 git init
+git pull origin master --allow-unrelated-histories
 git add README.md
-git commit -m "first commit"
+git commit -m "First commit"
 git remote add origin git@github.com:$3/$2.git
 cp $4 .
 git push -u origin master
+git add *
+git commit -m "First website push"
+git push
 
 echo 'Repo initialized'
